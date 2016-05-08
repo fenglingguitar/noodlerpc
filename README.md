@@ -1,28 +1,28 @@
-# noodlecall 
+# noodlerpc 
 
-noodlecall是一套分布式服务治理解决方案 <br><br>
+noodlerpc是一套分布式服务治理解决方案 <br><br>
 
 DEMO: <br>
 
 git clone https://github.com/fenglingguitar/noodlecommon.git <br>
 mvn install -Dmaven.test.skip=true <br><br>
 
-安装/启动本地MySQL，建立数据库：noodlecall_console_dev，用户：noodlecall，密码：noodlecall <br><br>
+安装/启动本地MySQL，建立数据库：noodlerpc_console_dev，用户：noodlerpc，密码：noodlerpc <br><br>
 
-git clone https://github.com/fenglingguitar/noodlecall.git <br>
+git clone https://github.com/fenglingguitar/noodlerpc.git <br>
 mvn package -P=dev -Dmaven.test.skip=true <br><br>
 
-部署/运行 控制台 noodlerpc-console-web/target/noodlecall.war <br><br>
+部署/运行 控制台 noodlerpc-console-web/target/noodlerpc.war <br><br>
 
-访问http://localhost:8080/noodlecall/ <br><br>
+访问http://localhost:8080/noodlerpc/ <br><br>
 
-运行 org.fl.noodlecall.demo.server.example.ServiceExporterDemoExampleNettyJson <br><br>
+运行 org.fl.noodlerpc.demo.server.example.ServiceExporterDemoExampleNettyJson <br><br>
 
-查看 控制台 -> 服务端，待状态上线后，运行 org.fl.noodlecall.demo.client.example.ServiceProxyFactoryDemoExample <br><br>
+查看 控制台 -> 服务端，待状态上线后，运行 org.fl.noodlerpc.demo.client.example.ServiceProxyFactoryDemoExample <br><br>
 
 压力测试为：<br>
-org.fl.noodlecall.demo.server.press.ServiceExporterDemoPressNettyJson <br>
-org.fl.noodlecall.demo.client.press.ServiceProxyFactoryDemoPress <br><br>
+org.fl.noodlerpc.demo.server.press.ServiceExporterDemoPressNettyJson <br>
+org.fl.noodlerpc.demo.client.press.ServiceProxyFactoryDemoPress <br><br>
 
 此版本支持功能：<br>
 1、服务自动注册、动态发现、动态配置 <br>
