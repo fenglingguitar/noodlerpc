@@ -4,7 +4,7 @@
 
   <groupId>org.fl.noodlerpc</groupId>
   <artifactId>noodlerpc</artifactId>
-  <version>1.0.0</version>
+  <version>1.1.0-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <name>noodlerpc</name>
@@ -40,32 +40,32 @@
   <properties>
   	
   	<noodlerpc.name>noodlerpc</noodlerpc.name>
-  	<noodlerpc.version>1.0.0</noodlerpc.version>
+  	<noodlerpc.version>1.1.0-SNAPSHOT</noodlerpc.version>
   	
-  	<noodlerpc.assembly.version>1.0.0</noodlerpc.assembly.version>
-  	<noodlerpc.console.version>1.0.0</noodlerpc.console.version>
-  	<noodlerpc.console.web.version>1.0.0</noodlerpc.console.web.version>
-  	<noodlerpc.console.vo.version>1.0.0</noodlerpc.console.vo.version>
-  	<noodlerpc.console.remoting.version>1.0.0</noodlerpc.console.remoting.version>
-  	<noodlerpc.core.connect.net.api.version>1.0.0</noodlerpc.core.connect.net.api.version>
-  	<noodlerpc.core.connect.net.http.api.version>1.0.0</noodlerpc.core.connect.net.http.api.version>
-  	<noodlerpc.core.connect.net.http.client.version>1.0.0</noodlerpc.core.connect.net.http.client.version>
-  	<noodlerpc.core.connect.net.http.server.version>1.0.0</noodlerpc.core.connect.net.http.server.version>
-  	<noodlerpc.core.connect.net.netty.client.version>1.0.0</noodlerpc.core.connect.net.netty.client.version>
-  	<noodlerpc.core.connect.net.netty.server.version>1.0.0</noodlerpc.core.connect.net.netty.server.version>
-  	<noodlerpc.core.connect.net.hessian.client.version>1.0.0</noodlerpc.core.connect.net.hessian.client.version>
-  	<noodlerpc.core.connect.net.hessian.server.version>1.0.0</noodlerpc.core.connect.net.hessian.server.version>
-  	<noodlerpc.core.connect.net.http.web.jetty.version>1.0.0</noodlerpc.core.connect.net.http.web.jetty.version>
-  	<noodlerpc.core.connect.net.http.web.servlet.version>1.0.0</noodlerpc.core.connect.net.http.web.servlet.version>
-	<noodlerpc.core.connect.net.register.version>1.0.0</noodlerpc.core.connect.net.register.version>
-  	<noodlerpc.monitor.statust.beat.version>1.0.0</noodlerpc.monitor.statust.beat.version>
-  	<noodlerpc.monitor.statust.console.version>1.0.0</noodlerpc.monitor.statust.console.version>
-  	<noodlerpc.core.client.net.version>1.0.0</noodlerpc.core.client.net.version>
-  	<noodlerpc.core.server.net.version>1.0.0</noodlerpc.core.server.net.version>
-	<noodlerpc.demo.client.version>1.0.0</noodlerpc.demo.client.version>
-	<noodlerpc.demo.server.version>1.0.0</noodlerpc.demo.server.version>
-	<noodlerpc.test.version>1.0.0</noodlerpc.test.version>
-	<noodlerpc.util.version>1.0.0</noodlerpc.util.version>
+  	<noodlerpc.assembly.version>1.1.0-SNAPSHOT</noodlerpc.assembly.version>
+  	<noodlerpc.console.version>1.1.0-SNAPSHOT</noodlerpc.console.version>
+  	<noodlerpc.console.web.version>1.1.0-SNAPSHOT</noodlerpc.console.web.version>
+  	<noodlerpc.console.vo.version>1.1.0-SNAPSHOT</noodlerpc.console.vo.version>
+  	<noodlerpc.console.remoting.version>1.1.0-SNAPSHOT</noodlerpc.console.remoting.version>
+  	<noodlerpc.core.connect.net.api.version>1.1.0-SNAPSHOT</noodlerpc.core.connect.net.api.version>
+  	<noodlerpc.core.connect.net.http.api.version>1.1.0-SNAPSHOT</noodlerpc.core.connect.net.http.api.version>
+  	<noodlerpc.core.connect.net.http.client.version>1.1.0-SNAPSHOT</noodlerpc.core.connect.net.http.client.version>
+  	<noodlerpc.core.connect.net.http.server.version>1.1.0-SNAPSHOT</noodlerpc.core.connect.net.http.server.version>
+  	<noodlerpc.core.connect.net.netty.client.version>1.1.0-SNAPSHOT</noodlerpc.core.connect.net.netty.client.version>
+  	<noodlerpc.core.connect.net.netty.server.version>1.1.0-SNAPSHOT</noodlerpc.core.connect.net.netty.server.version>
+  	<noodlerpc.core.connect.net.hessian.client.version>1.1.0-SNAPSHOT</noodlerpc.core.connect.net.hessian.client.version>
+  	<noodlerpc.core.connect.net.hessian.server.version>1.1.0-SNAPSHOT</noodlerpc.core.connect.net.hessian.server.version>
+  	<noodlerpc.core.connect.net.http.web.jetty.version>1.1.0-SNAPSHOT</noodlerpc.core.connect.net.http.web.jetty.version>
+  	<noodlerpc.core.connect.net.http.web.servlet.version>1.1.0-SNAPSHOT</noodlerpc.core.connect.net.http.web.servlet.version>
+	<noodlerpc.core.connect.net.register.version>1.1.0-SNAPSHOT</noodlerpc.core.connect.net.register.version>
+  	<noodlerpc.monitor.statust.beat.version>1.1.0-SNAPSHOT</noodlerpc.monitor.statust.beat.version>
+  	<noodlerpc.monitor.statust.console.version>1.1.0-SNAPSHOT</noodlerpc.monitor.statust.console.version>
+  	<noodlerpc.core.client.net.version>1.1.0-SNAPSHOT</noodlerpc.core.client.net.version>
+  	<noodlerpc.core.server.net.version>1.1.0-SNAPSHOT</noodlerpc.core.server.net.version>
+	<noodlerpc.demo.client.version>1.1.0-SNAPSHOT</noodlerpc.demo.client.version>
+	<noodlerpc.demo.server.version>1.1.0-SNAPSHOT</noodlerpc.demo.server.version>
+	<noodlerpc.test.version>1.1.0-SNAPSHOT</noodlerpc.test.version>
+	<noodlerpc.util.version>1.1.0-SNAPSHOT</noodlerpc.util.version>
   	
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     
@@ -77,67 +77,67 @@
 		<dependency>
 			<groupId>org.fl.noodle.common.net</groupId>
 			<artifactId>noodlecommon-net</artifactId>
-			<version>1.0.0</version>
+			<version>1.1.0-SNAPSHOT</version>
 		</dependency>
 		
 		<dependency>
 			<groupId>org.fl.noodle.common.util</groupId>
 			<artifactId>noodlecommon-util</artifactId>
-			<version>1.0.0</version>
+			<version>1.1.0-SNAPSHOT</version>
 		</dependency>
 		
 		<dependency>
 			<groupId>org.fl.noodle.common.test</groupId>
 			<artifactId>noodlecommon-test</artifactId>
-			<version>1.0.0</version>
+			<version>1.1.0-SNAPSHOT</version>
 		</dependency>
 		
 		<dependency>
 			<groupId>org.fl.noodle.common.mvc</groupId>
 			<artifactId>noodlecommon-mvc</artifactId>
-			<version>1.0.0</version>
+			<version>1.1.0-SNAPSHOT</version>
 		</dependency>
 		
 		<dependency>
 			<groupId>org.fl.noodle.common.mvc.vo</groupId>
 			<artifactId>noodlecommon-mvc-vo</artifactId>
-			<version>1.0.0</version>
+			<version>1.1.0-SNAPSHOT</version>
 		</dependency>
 		
 		<dependency>
 			<groupId>org.fl.noodle.common.dynamicsql</groupId>
 			<artifactId>noodlecommon-dynamicsql</artifactId>
-			<version>1.0.0</version>
+			<version>1.1.0-SNAPSHOT</version>
 		</dependency>
 		
 		<dependency>
 			<groupId>org.fl.noodle.common.dbseparate</groupId>
 			<artifactId>noodlecommon-dbseparate</artifactId>
-			<version>1.0.0</version>
+			<version>1.1.0-SNAPSHOT</version>
 		</dependency>
 		
 		<dependency>
 			<groupId>org.fl.noodle.common.connect</groupId>
 			<artifactId>noodlecommon-connect-api</artifactId>
-			<version>1.0.0</version>
+			<version>1.1.0-SNAPSHOT</version>
 		</dependency>
 		
 		<dependency>
 			<groupId>org.fl.noodle.common.connect.expand</groupId>
 			<artifactId>noodlecommon-connect-expand-api</artifactId>
-			<version>1.0.0</version>
+			<version>1.1.0-SNAPSHOT</version>
 		</dependency>
 		
 		<dependency>
 			<groupId>org.fl.noodle.common.monitor</groupId>
 			<artifactId>noodlecommon-monitor-api</artifactId>
-			<version>1.0.0</version>
+			<version>1.1.0-SNAPSHOT</version>
 		</dependency>
 		
 		<dependency>
 			<groupId>org.fl.noodle.common.monitor.performance</groupId>
 			<artifactId>noodlecommon-monitor-performance</artifactId>
-			<version>1.0.0</version>
+			<version>1.1.0-SNAPSHOT</version>
 		</dependency>
 		
 	    <dependency>
