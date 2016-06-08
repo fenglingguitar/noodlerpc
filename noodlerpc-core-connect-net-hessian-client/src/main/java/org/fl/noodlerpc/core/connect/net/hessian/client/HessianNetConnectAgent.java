@@ -5,6 +5,7 @@ import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.List;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -13,7 +14,6 @@ import org.fl.noodle.common.connect.exception.ConnectRefusedException;
 import org.fl.noodle.common.connect.exception.ConnectResetException;
 import org.fl.noodle.common.connect.exception.ConnectStopException;
 import org.fl.noodle.common.connect.exception.ConnectTimeoutException;
-import org.fl.noodle.common.connect.expand.monitor.PerformanceMonitor;
 import org.fl.noodlerpc.core.connect.net.agent.AbstractNetConnectAgent;
 import org.fl.noodlerpc.core.connect.net.constent.NetConnectAgentType;
 import org.fl.noodlerpc.core.connect.net.rpc.Invocation;
@@ -30,8 +30,8 @@ public class HessianNetConnectAgent extends AbstractNetConnectAgent implements I
 	
 	private Object serviceObject;
 	
-	public HessianNetConnectAgent(long connectId, String ip, int port, String url, int connectTimeout, int readTimeout, String encoding, int invalidLimitNum, ConnectDistinguish connectDistinguish, PerformanceMonitor performanceMonitor) {
-		super(connectId, ip, port, url, NetConnectAgentType.HESSIAN.getCode(), connectTimeout, readTimeout, encoding, invalidLimitNum, connectDistinguish, performanceMonitor);
+	public HessianNetConnectAgent(long connectId, String ip, int port, String url, int connectTimeout, int readTimeout, String encoding, int invalidLimitNum, ConnectDistinguish connectDistinguish, List<Object> methodInterceptorList) {
+		super(connectId, ip, port, url, NetConnectAgentType.HESSIAN.getCode(), connectTimeout, readTimeout, encoding, invalidLimitNum, connectDistinguish, methodInterceptorList);
 		fullUrl = new StringBuilder("http://").append(ip).append(":").append(port).append(url).toString();
 	}
 

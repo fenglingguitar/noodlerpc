@@ -1,6 +1,7 @@
 package org.fl.noodlerpc.core.connect.net.http.client;
 
 import java.io.IOException;
+import java.util.List;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -10,7 +11,6 @@ import org.fl.noodle.common.connect.exception.ConnectResetException;
 import org.fl.noodle.common.connect.exception.ConnectSerializeException;
 import org.fl.noodle.common.connect.exception.ConnectStopException;
 import org.fl.noodle.common.connect.exception.ConnectTimeoutException;
-import org.fl.noodle.common.connect.expand.monitor.PerformanceMonitor;
 import org.fl.noodle.common.net.http.HttpConnect;
 import org.fl.noodle.common.net.http.jdk.HttpConnectJdk;
 import org.fl.noodlerpc.core.connect.net.agent.AbstractNetConnectAgent;
@@ -27,8 +27,8 @@ public class HttpNetConnectAgent extends AbstractNetConnectAgent implements Invo
 	
 	private String inputName;
 	
-	public HttpNetConnectAgent(long connectId, String ip, int port, String url, int connectTimeout, int readTimeout, String encoding, int invalidLimitNum, String inputName, ConnectDistinguish connectDistinguish, PerformanceMonitor performanceMonitor) {
-		super(connectId, ip, port, url, NetConnectAgentType.HTTP.getCode(), connectTimeout, readTimeout, encoding, invalidLimitNum, connectDistinguish, performanceMonitor);
+	public HttpNetConnectAgent(long connectId, String ip, int port, String url, int connectTimeout, int readTimeout, String encoding, int invalidLimitNum, String inputName, ConnectDistinguish connectDistinguish, List<Object> methodInterceptorList) {
+		super(connectId, ip, port, url, NetConnectAgentType.HTTP.getCode(), connectTimeout, readTimeout, encoding, invalidLimitNum, connectDistinguish, methodInterceptorList);
 		this.inputName = inputName;
 	}
 

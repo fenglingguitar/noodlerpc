@@ -9,7 +9,7 @@ public class NettyNetConnectAgentFactory extends AbstractConnectAgentFactory {
 	
 	@Override
 	public ConnectAgent createConnectAgent(long connectId, String ip, int port, String url, int connectTimeout, int readTimeout) {
-		return new NettyNetConnectAgent(connectId, ip, port, null, connectTimeout, readTimeout, encoding, invalidLimitNum, nettyNetConnectPoolConfParam, connectDistinguish, performanceMonitor);
+		return new NettyNetConnectAgent(connectId, ip, port, null, connectTimeout, readTimeout, encoding, invalidLimitNum, nettyNetConnectPoolConfParam, connectDistinguish, methodInterceptorList);
 	}
 
 	public void setNettyNetConnectPoolConfParam(NettyNetConnectPoolConfParam nettyNetConnectPoolConfParam) {

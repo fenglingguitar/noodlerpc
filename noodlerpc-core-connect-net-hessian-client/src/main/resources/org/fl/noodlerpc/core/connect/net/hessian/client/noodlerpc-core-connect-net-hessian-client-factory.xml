@@ -13,6 +13,14 @@
 	
 	<import resource="classpath:org/fl/noodlerpc/core/connect/net/distinguish/noodlerpc-core-connect-net-distinguish.xml" />
 	
-    <bean id="hessianNetConnectAgentFactory" class="org.fl.noodlerpc.core.connect.net.hessian.client.HessianNetConnectAgentFactory" />
+	<import resource="classpath:org/fl/noodle/common/monitor/performance/aop/noodlecommon-monitor-performance-aop-interceptor.xml" />
+	
+    <bean id="hessianNetConnectAgentFactory" class="org.fl.noodlerpc.core.connect.net.hessian.client.HessianNetConnectAgentFactory" >
+    	<property name="methodInterceptorList">
+			<list>
+				<ref bean="performanceMethodInterceptor" />
+			</list>
+		</property>
+    </bean>
 	
 </beans>

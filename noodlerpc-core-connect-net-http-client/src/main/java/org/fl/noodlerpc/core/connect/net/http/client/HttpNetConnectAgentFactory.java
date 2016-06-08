@@ -9,7 +9,7 @@ public class HttpNetConnectAgentFactory extends AbstractConnectAgentFactory {
 
 	@Override
 	public ConnectAgent createConnectAgent(long connectId, String ip, int port, String url, int connectTimeout, int readTimeout) {
-		return new HttpNetConnectAgent(connectId, ip, port, url, connectTimeout, readTimeout, encoding, invalidLimitNum, inputName, connectDistinguish, performanceMonitor);
+		return new HttpNetConnectAgent(connectId, ip, port, url, connectTimeout, readTimeout, encoding, invalidLimitNum, inputName, connectDistinguish, methodInterceptorList);
 	}
 	
 	public void setInputName(String inputName) {

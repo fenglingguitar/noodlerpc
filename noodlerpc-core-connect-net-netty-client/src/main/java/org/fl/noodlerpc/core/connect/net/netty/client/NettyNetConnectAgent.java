@@ -1,5 +1,7 @@
 package org.fl.noodlerpc.core.connect.net.netty.client;
 
+import java.util.List;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.fl.noodle.common.connect.distinguish.ConnectDistinguish;
@@ -8,7 +10,6 @@ import org.fl.noodle.common.connect.exception.ConnectResetException;
 import org.fl.noodle.common.connect.exception.ConnectSerializeException;
 import org.fl.noodle.common.connect.exception.ConnectStopException;
 import org.fl.noodle.common.connect.exception.ConnectTimeoutException;
-import org.fl.noodle.common.connect.expand.monitor.PerformanceMonitor;
 import org.fl.noodle.common.net.socket.SocketConnect;
 import org.fl.noodlerpc.core.connect.net.agent.AbstractNetConnectAgent;
 import org.fl.noodlerpc.core.connect.net.constent.NetConnectAgentType;
@@ -24,8 +25,8 @@ public class NettyNetConnectAgent extends AbstractNetConnectAgent implements Inv
 	
 	private NettyNetConnectPoolConfParam nettyNetConnectPoolConfParam;
 	
-	public NettyNetConnectAgent(long connectId, String ip, int port, String url, int connectTimeout, int readTimeout, String encoding, int invalidLimitNum, NettyNetConnectPoolConfParam nettyNetConnectPoolConfParam, ConnectDistinguish connectDistinguish, PerformanceMonitor performanceMonitor) {
-		super(connectId, ip, port, url, NetConnectAgentType.NETTY.getCode(), connectTimeout, readTimeout, encoding, invalidLimitNum, connectDistinguish, performanceMonitor);
+	public NettyNetConnectAgent(long connectId, String ip, int port, String url, int connectTimeout, int readTimeout, String encoding, int invalidLimitNum, NettyNetConnectPoolConfParam nettyNetConnectPoolConfParam, ConnectDistinguish connectDistinguish, List<Object> methodInterceptorList) {
+		super(connectId, ip, port, url, NetConnectAgentType.NETTY.getCode(), connectTimeout, readTimeout, encoding, invalidLimitNum, connectDistinguish, methodInterceptorList);
 		this.nettyNetConnectPoolConfParam = nettyNetConnectPoolConfParam;
 	}
 
