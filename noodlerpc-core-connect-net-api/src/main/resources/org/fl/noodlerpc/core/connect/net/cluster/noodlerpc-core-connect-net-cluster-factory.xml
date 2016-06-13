@@ -13,8 +13,26 @@
 	
 	<import resource="classpath:org/fl/noodlerpc/core/connect/net/distinguish/noodlerpc-core-connect-net-distinguish.xml" />
 
-    <bean id="failoverConnectClusterFactory" class="org.fl.noodle.common.connect.cluster.FailoverConnectClusterFactory" />
-    <bean id="onceConnectClusterFactory" class="org.fl.noodle.common.connect.cluster.OnceConnectClusterFactory" />
-    <bean id="allConnectClusterFactory" class="org.fl.noodle.common.connect.cluster.AllConnectClusterFactory" />
+    <bean id="failoverConnectClusterFactory" class="org.fl.noodle.common.connect.cluster.FailoverConnectClusterFactory">
+    	<property name="methodInterceptorList">
+			<list>
+				<ref bean="clusterPerformanceMethodInterceptor" />
+			</list>
+		</property>
+    </bean>
+    <bean id="onceConnectClusterFactory" class="org.fl.noodle.common.connect.cluster.OnceConnectClusterFactory">
+    	<property name="methodInterceptorList">
+			<list>
+				<ref bean="clusterPerformanceMethodInterceptor" />
+			</list>
+		</property>
+	</bean>
+    <bean id="allConnectClusterFactory" class="org.fl.noodle.common.connect.cluster.AllConnectClusterFactory">
+    	<property name="methodInterceptorList">
+			<list>
+				<ref bean="clusterPerformanceMethodInterceptor" />
+			</list>
+		</property>
+	</bean>
 	
 </beans>
