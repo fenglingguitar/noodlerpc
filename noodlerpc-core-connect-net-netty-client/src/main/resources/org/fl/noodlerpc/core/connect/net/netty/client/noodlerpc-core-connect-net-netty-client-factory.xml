@@ -18,7 +18,7 @@
     <bean id="nettyNetConnectAgentFactory" class="org.fl.noodlerpc.core.connect.net.netty.client.NettyNetConnectAgentFactory">
     	<property name="methodInterceptorList">
 			<list>
-				<ref bean="performanceMethodInterceptor" />
+				<ref bean="agentPerformanceMethodInterceptor" />
 			</list>
 		</property>
     </bean>
