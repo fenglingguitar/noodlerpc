@@ -17,7 +17,10 @@ public class ServiceProxyFactoryDemoExample {
 		TestNetService testNetService = (TestNetService) applicationContext.getBean("testNetService");
 		
 		for (int i=0; i<Integer.MAX_VALUE; i++) {			
-			System.out.println("[" + new SimpleDateFormat("HH:mm:ss").format(new Date()) + "] " + testNetService.sayHello("noodlerpc"));
+			try {
+				System.out.println("[" + new SimpleDateFormat("HH:mm:ss").format(new Date()) + "] " + testNetService.sayHello("noodlerpc"));
+			} catch (Exception e) {
+			}
 			Thread.sleep(1000);
 		}
 
