@@ -9,6 +9,7 @@ import java.util.List;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.aopalliance.intercept.MethodInterceptor;
 import org.fl.noodle.common.connect.distinguish.ConnectDistinguish;
 import org.fl.noodle.common.connect.exception.ConnectRefusedException;
 import org.fl.noodle.common.connect.exception.ConnectResetException;
@@ -30,7 +31,7 @@ public class HessianNetConnectAgent extends AbstractNetConnectAgent implements I
 	
 	private Object serviceObject;
 	
-	public HessianNetConnectAgent(long connectId, String ip, int port, String url, int connectTimeout, int readTimeout, String encoding, int invalidLimitNum, ConnectDistinguish connectDistinguish, List<Object> methodInterceptorList) {
+	public HessianNetConnectAgent(long connectId, String ip, int port, String url, int connectTimeout, int readTimeout, String encoding, int invalidLimitNum, ConnectDistinguish connectDistinguish, List<MethodInterceptor> methodInterceptorList) {
 		super(connectId, ip, port, url, NetConnectAgentType.HESSIAN.getCode(), connectTimeout, readTimeout, encoding, invalidLimitNum, connectDistinguish, methodInterceptorList);
 		fullUrl = new StringBuilder("http://").append(ip).append(":").append(port).append(url).toString();
 	}

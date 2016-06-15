@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.aopalliance.intercept.MethodInterceptor;
 import org.fl.noodle.common.connect.distinguish.ConnectDistinguish;
 import org.fl.noodle.common.connect.exception.ConnectRefusedException;
 import org.fl.noodle.common.connect.exception.ConnectResetException;
@@ -25,7 +26,7 @@ public class NettyNetConnectAgent extends AbstractNetConnectAgent implements Inv
 	
 	private NettyNetConnectPoolConfParam nettyNetConnectPoolConfParam;
 	
-	public NettyNetConnectAgent(long connectId, String ip, int port, String url, int connectTimeout, int readTimeout, String encoding, int invalidLimitNum, NettyNetConnectPoolConfParam nettyNetConnectPoolConfParam, ConnectDistinguish connectDistinguish, List<Object> methodInterceptorList) {
+	public NettyNetConnectAgent(long connectId, String ip, int port, String url, int connectTimeout, int readTimeout, String encoding, int invalidLimitNum, NettyNetConnectPoolConfParam nettyNetConnectPoolConfParam, ConnectDistinguish connectDistinguish, List<MethodInterceptor> methodInterceptorList) {
 		super(connectId, ip, port, url, NetConnectAgentType.NETTY.getCode(), connectTimeout, readTimeout, encoding, invalidLimitNum, connectDistinguish, methodInterceptorList);
 		this.nettyNetConnectPoolConfParam = nettyNetConnectPoolConfParam;
 	}

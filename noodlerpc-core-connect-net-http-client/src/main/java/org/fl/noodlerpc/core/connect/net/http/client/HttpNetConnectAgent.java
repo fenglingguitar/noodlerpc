@@ -5,6 +5,7 @@ import java.util.List;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.aopalliance.intercept.MethodInterceptor;
 import org.fl.noodle.common.connect.distinguish.ConnectDistinguish;
 import org.fl.noodle.common.connect.exception.ConnectRefusedException;
 import org.fl.noodle.common.connect.exception.ConnectResetException;
@@ -27,7 +28,7 @@ public class HttpNetConnectAgent extends AbstractNetConnectAgent implements Invo
 	
 	private String inputName;
 	
-	public HttpNetConnectAgent(long connectId, String ip, int port, String url, int connectTimeout, int readTimeout, String encoding, int invalidLimitNum, String inputName, ConnectDistinguish connectDistinguish, List<Object> methodInterceptorList) {
+	public HttpNetConnectAgent(long connectId, String ip, int port, String url, int connectTimeout, int readTimeout, String encoding, int invalidLimitNum, String inputName, ConnectDistinguish connectDistinguish, List<MethodInterceptor> methodInterceptorList) {
 		super(connectId, ip, port, url, NetConnectAgentType.HTTP.getCode(), connectTimeout, readTimeout, encoding, invalidLimitNum, connectDistinguish, methodInterceptorList);
 		this.inputName = inputName;
 	}
