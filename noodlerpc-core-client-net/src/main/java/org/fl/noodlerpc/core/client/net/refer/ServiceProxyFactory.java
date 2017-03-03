@@ -38,8 +38,8 @@ public class ServiceProxyFactory implements FactoryBean<Object>, MethodIntercept
 	@Override
 	public void afterPropertiesSet() throws Exception {
 		serviceInterface = Class.forName(interfaceName);
-		ProxyFactory ProxyFactory = new ProxyFactory(serviceInterface, this);
-		this.serviceProxy = ProxyFactory.getProxy();
+		ProxyFactory proxyFactory = new ProxyFactory(serviceInterface, this);
+		this.serviceProxy = proxyFactory.getProxy();
 		if (serviceName == null) {
 			serviceName = serviceInterface.getSimpleName();
 		}
