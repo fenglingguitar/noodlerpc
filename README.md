@@ -5,6 +5,7 @@ noodlerpc是一套分布式服务治理解决方案 <br><br>
 DEMO: <br>
 
 git clone https://github.com/fenglingguitar/noodlecommon.git <br>
+checkout noodlecommon-2.0.0
 mvn install -Dmaven.test.skip=true <br><br>
 
 安装/启动本地MySQL，建立数据库：noodlerpc_console_dev，用户：noodlerpc，密码：noodlerpc <br><br>
