@@ -30,11 +30,6 @@
 		<groupId>org.fl.noodle.common.connect</groupId>
 		<artifactId>noodlecommon-connect-api</artifactId>
 	</dependency>
-	
-	<dependency>
-		<groupId>org.fl.noodle.common.connect.expand</groupId>
-		<artifactId>noodlecommon-connect-expand-api</artifactId>
-	</dependency>
 		
 	<dependency>
 		<groupId>org.fl.noodle.common.connect</groupId>

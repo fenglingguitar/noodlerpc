@@ -28,11 +28,6 @@
 		<artifactId>noodlecommon-mvc-vo</artifactId>
 	</dependency>
  	
- 	<dependency>
-  		<groupId>org.fl.noodle.common.connect.expand</groupId>
-  		<artifactId>noodlecommon-connect-expand-api</artifactId>
-	</dependency>
- 	
 	<dependency>
 		<groupId>org.fl.noodle.common.monitor.performance</groupId>
 		<artifactId>noodlecommon-monitor-performance</artifactId>
